@@ -4,6 +4,6 @@ test('Check header', async ({ page }) => {
     await page.goto('https://adriqnn-deployment.onrender.com');
     const homeLink = await page.$('a[href="/"]');
     const text = await homeLink.textContent();
-    expect(text).toBe('Boardgame Collection');
+    expect(text).toBe('Home');
   });
   
